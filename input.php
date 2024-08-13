@@ -31,5 +31,9 @@
         height:100%;
         background-color:red;
     }
+    input{
+        width:100%;
+        
+    }
 </style>
 </html>
