@@ -11,6 +11,10 @@
     </div>
 </body>
 <style>
-    
+    .container{
+        width:150px;
+        height:250px;
+        background-color:red;
+    }
 </style>
 </html>
