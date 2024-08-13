@@ -10,6 +10,13 @@
         <div class="inp">
             <Label>Link Gambar</Label>
             <textarea name="gambar" id=""></textarea>
+            <label >Tag</label>
+            <input type="text">
+            <label >Judul</label>
+            <input type="text">
+            <label>Tanggal</label>
+            <input type="date">
+            <button>Read More</button>
         </div>
     </div>
 </body>
