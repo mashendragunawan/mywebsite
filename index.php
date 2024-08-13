@@ -6,6 +6,7 @@
     <title>Test Card</title>
 </head>
 <body>
+    <h1>Test</h1>
     <?php
     include 'koneksi.php';
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
