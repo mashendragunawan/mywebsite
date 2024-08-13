@@ -7,7 +7,10 @@
 </head>
 <body>
     <div class="container">
-
+        <div class="inp">
+            <Label>Link Gambar</Label>
+            <textarea name="gambar" id=""></textarea>
+        </div>
     </div>
 </body>
 <style>
