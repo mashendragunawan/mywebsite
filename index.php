@@ -16,6 +16,7 @@
     ?>
    <h4>WWWR</h4>
    <h6>bbc</h6>
+   <b>test aja lah masuk gak ini th </b>
     <div class="container">
         <div class="utama">
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
