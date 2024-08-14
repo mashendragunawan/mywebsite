@@ -15,6 +15,7 @@
     while($d = mysqli_fetch_array($data)){
     ?>
    <h4>WWWR</h4>
+   <h6>bbc</h6>
     <div class="container">
         <div class="utama">
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
