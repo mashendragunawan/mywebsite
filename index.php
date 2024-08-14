@@ -13,6 +13,7 @@
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
     while($d = mysqli_fetch_array($data)){
     ?>
+   <h4>WWWR</h4>
     <div class="container">
         <div class="utama">
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
