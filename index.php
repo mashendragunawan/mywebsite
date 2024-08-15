@@ -31,7 +31,7 @@
     }
     .container{
         width:290px;
-        height:420px;
+        height:450px;
         margin:0px 8px;
         background-color:#fff;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
@@ -70,6 +70,7 @@
         display: inline-block;
         font-size: 16px;
         cursor: pointer;
+        width:270px;
     }
     @media only screen and (max-width:600px){
         .container{
