@@ -6,23 +6,17 @@
     <title>Test Card</title>
 </head>
 <body>
-    <h1>Test</h1>
-    <h5>baj</h5>
-    <h3>Belajar VERSAMA GITHUB</h3>
     <?php
     include 'koneksi.php';
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
     while($d = mysqli_fetch_array($data)){
     ?>
-   <h4>WWWR</h4>
-   <h6>bbc</h6>
-   <b>test aja lah masuk gak ini th </b>
     <div class="container">
         <div class="utama">
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
         <p class="tag"><?php echo $d['tag']; ?></p>
         <h3><?php echo $d['judul']; ?></h3>
-        <p><?php echo $d['tangal']; ?></p>
+        <p class="tanggal"><?php echo $d['tangal']; ?></p>
         <button>Read More</button>
         </div>
     </div>
@@ -40,8 +34,8 @@
         height:420px;
         margin:0px 8px;
         background-color:#fff;
-        box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
-        border-radius:5px 5px 0px 0px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+        border-radius:5px 5px 5px 5px;
         display:inline-flex;
     }
     img{
@@ -52,6 +46,7 @@
     }
     h3, p{
         margin:10px 10px;
+        font-family: sans-serif;
     }
     .tag{
         background-color: rgba(9, 132, 227, 0.5);
@@ -65,6 +60,33 @@
     }
     button{
         margin:10px 10px;
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        font-weight: bold; 
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    @media only screen and (max-width:600px){
+        .container{
+            margin:10px 10px;
+            height:460px;
+            width:340px;
+            overflow: hidden;
+        }
+        button{
+            width: 320px;
+            border-radius:5px;
+        }
+        img{
+            object-fit: cover;
+            width:340px;
+            
+        }
     }
 </style>
 </html>
