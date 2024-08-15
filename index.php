@@ -12,14 +12,19 @@
                 <h2>Mas Hendra</h2>
                 <div class="lia">
                 <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Home</a></li>
+                <li><a href="">Tutorial</a></li>
+                <li><a href="">Aplikasi</a></li>
+                <li><a href="">Artikel</a></li>
+                <li><a href="">About</a></li>
                 </div>
             </ul>
         </nav>
     </div>
+    <div class="home">
+        <div class="inf">
+                <h3 class="rr">Artikel Terbaru mashendra.com</h3>
+                <p class="aa">Baca Update Artikel Terbaru </p>
+        </div>
     <?php
     include 'koneksi.php';
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
@@ -37,8 +42,17 @@
     <?php
     }
     ?>
+    </div>
 </body>
 <style>
+    .rr{
+        position:absolute;
+        
+    }
+    .aa{
+        position:absolute;
+        
+    }
     .utama{
         width:250px;
         height:300px; 
@@ -76,6 +90,7 @@
         font-size:15px; 
         font-weight: bold;  
     }
+    
     button{
         margin:10px 10px;
         background-color: #04AA6D;
@@ -95,26 +110,49 @@
         margin:auto;
         padding:auto;
         height:50px;
+        list-style: none;
         
     }
     .lia{
         display:flex;
-        background-color:blue;
         width:300px;
         justify-content:center;
         align-items:center;
         position:absolute;
+        left:1100px;
+        top:4px;
+        font-weight:bold;
+        font-family:sans-serif;
     }
     li{
-        margin:10px 5px;
+        margin:10px 15px;
         
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+        font-size:18px;
     }
     body{
         margin:auto;
         padding:auto;
     }
+    .inf{
+        background-color:red;
+    }
     h2{
         color:#fff;
+        position:absolute;
+        left:400px;
+        top:-23px;
+        font-weight:bold;
+        font-size:35px;
+    }
+    .home{
+        width: 75%;
+        position:absolute;
+        top:200px;
+        left:270px;
     }
     
     @media only screen and (max-width:600px){
