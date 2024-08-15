@@ -6,6 +6,20 @@
     <title>Test Card</title>
 </head>
 <body>
+    <div class="nv">
+        <nav>
+            <ul>
+                <h2>Mas Hendra</h2>
+                <div class="lia">
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Home</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
     <?php
     include 'koneksi.php';
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
@@ -32,11 +46,15 @@
     .container{
         width:290px;
         height:450px;
-        margin:0px 8px;
+        margin:12px 10px;
         background-color:#fff;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
         border-radius:5px 5px 5px 5px;
         display:inline-flex;
+        transition: transform 0.3s ease;    
+    }
+    .container:hover{
+        transform: scale(1.1);
     }
     img{
         width:290px;
@@ -72,6 +90,33 @@
         cursor: pointer;
         width:270px;
     }
+    ul{
+        background-color:red;
+        margin:auto;
+        padding:auto;
+        height:50px;
+        
+    }
+    .lia{
+        display:flex;
+        background-color:blue;
+        width:300px;
+        justify-content:center;
+        align-items:center;
+        position:absolute;
+    }
+    li{
+        margin:10px 5px;
+        
+    }
+    body{
+        margin:auto;
+        padding:auto;
+    }
+    h2{
+        color:#fff;
+    }
+    
     @media only screen and (max-width:600px){
         .container{
             margin:10px 10px;
@@ -88,6 +133,28 @@
             width:340px;
             
         }
+        a,li{
+            display:none;
+
+    }
+    ul{
+        display:flex;
+        background-color:red;
+        margin:auto;
+        padding:auto;
+        
+    }
+    li{
+        margin:10px 5px;
+        
+    }
+    body{
+        margin:auto;
+        padding:auto;
+    }
+    h2{
+        color:#fff;
+    }
     }
 </style>
 </html>
