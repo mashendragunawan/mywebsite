@@ -36,7 +36,7 @@
         <p class="tag"><?php echo $d['tag']; ?></p>
         <h3><?php echo $d['judul']; ?></h3>
         <p class="tanggal"><?php echo $d['tangal']; ?></p>
-        <button>Read More</button>
+        <?php echo"<a href='".$d['btn']."'>"; ?>Read More</a>
         </div>
     </div>
     <?php
@@ -90,21 +90,6 @@
         font-size:15px; 
         font-weight: bold;  
     }
-    
-    button{
-        margin:10px 10px;
-        background-color: #04AA6D;
-        border: none;
-        color: white;
-        font-weight: bold; 
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        width:270px;
-    }
     ul{
         background-color:red;
         margin:auto;
@@ -128,7 +113,7 @@
         margin:10px 15px;
         
     }
-    a{
+    .lia a{
         text-decoration: none;
         color:#fff;
         font-size:18px;
@@ -154,6 +139,14 @@
         top:200px;
         left:270px;
     }
+    a{
+        text-decoration: none;
+        margin:10px 10px;
+        background-color:red;
+        color:#fff; 
+        width: 60px;
+        height:28px; 
+    }
     
     @media only screen and (max-width:600px){
         .container{
@@ -171,7 +164,7 @@
             width:340px;
             
         }
-        a,li{
+        .lia a,li{
             display:none;
 
     }
