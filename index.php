@@ -76,7 +76,7 @@
         object-fit: cover;
         border-radius:5px 5px 0px 0px;
     }
-    h3, p{
+     p{
         margin:10px 10px;
         font-family: sans-serif;
     }
@@ -141,11 +141,22 @@
     }
     a{
         text-decoration: none;
-        margin:10px 10px;
-        background-color:red;
+        margin:30px 10px;
+        background-color:#16a085;
         color:#fff; 
-        width: 60px;
-        height:28px; 
+        width: 108%;
+        height:38px; 
+        font-size:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+        border-radius:2px;
+    }
+    h3{
+        margin:10px 10px;
+        font-family: sans-serif;
+        width:108%;
     }
     
     @media only screen and (max-width:600px){
