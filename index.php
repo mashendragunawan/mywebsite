@@ -21,10 +21,6 @@
         </nav>
     </div>
     <div class="home">
-        <div class="inf">
-                <h3 class="rr">Artikel Terbaru mashendra.com</h3>
-                <p class="aa">Baca Update Artikel Terbaru </p>
-        </div>
     <?php
     include 'koneksi.php';
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
@@ -36,7 +32,7 @@
         <p class="tag"><?php echo $d['tag']; ?></p>
         <h3><?php echo $d['judul']; ?></h3>
         <p class="tanggal"><?php echo $d['tangal']; ?></p>
-        <?php echo"<a href='".$d['btn']."'>"; ?>Read More</a>
+        <?php echo "<a href='".$d['btn']."' class='ac'>Read More</a>";?>
         </div>
     </div>
     <?php
@@ -91,21 +87,23 @@
         font-weight: bold;  
     }
     ul{
-        background-color:red;
+        background-color:#fff;
         margin:auto;
         padding:auto;
         height:50px;
         list-style: none;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
         
     }
     .lia{
         display:flex;
-        width:300px;
+        width:700px;
         justify-content:center;
         align-items:center;
         position:absolute;
-        left:1100px;
+        left:800px;
         top:4px;
+        height:40px;
         font-weight:bold;
         font-family:sans-serif;
     }
@@ -122,29 +120,20 @@
         margin:auto;
         padding:auto;
     }
-    .inf{
-        background-color:red;
-    }
     h2{
-        color:#fff;
+        color:#16a085;
         position:absolute;
         left:400px;
         top:-23px;
         font-weight:bold;
         font-size:35px;
     }
-    .home{
-        width: 75%;
-        position:absolute;
-        top:200px;
-        left:270px;
-    }
-    a{
+     a{
         text-decoration: none;
-        margin:30px 10px;
+        margin:50px 10px;
         background-color:#16a085;
         color:#fff; 
-        width: 108%;
+        width:270px;
         height:38px; 
         font-size:20px;
         display:flex;
@@ -153,50 +142,75 @@
         font-weight:bold;
         border-radius:2px;
     }
+    .lia a{
+        width:100px;
+        display:none;
+    }
     h3{
         margin:10px 10px;
         font-family: sans-serif;
         width:108%;
     }
-    
     @media only screen and (max-width:600px){
-        .container{
-            margin:10px 10px;
-            height:460px;
-            width:340px;
-            overflow: hidden;
+        .lia{
+            display:none;
         }
-        button{
-            width: 320px;
-            border-radius:5px;
+        ul{
+            max-width:content;
+        }
+        h2{
+            margin-left:-350px;
+        }
+        .home{
+            background-color:blue;
+        }
+        .container{
+            width:250px;
+            margin:10px 20px;
         }
         img{
-            object-fit: cover;
-            width:340px;
-            
+            width:250px;
         }
-        .lia a,li{
-            display:none;
+         a{
+            width: 230px;
+            margin:30px 10px;
+        }
+        h3{
+            width:230px;
 
+        }
     }
-    ul{
-        display:flex;
-        background-color:red;
-        margin:auto;
-        padding:auto;
-        
-    }
-    li{
-        margin:10px 5px;
-        
-    }
-    body{
-        margin:auto;
-        padding:auto;
-    }
-    h2{
-        color:#fff;
-    }
+    @media only screen and (max-width:400px){
+        .lia{
+            display:none;
+        }
+        ul{
+            max-width:content;
+        }
+        h2{
+            margin-left:-380px;
+        }
+        .home{
+            background-color:blue;
+        }
+        .container{
+            width:330px;
+            margin:10px 20px;
+        }
+        .container:hover{
+            transform: none;
+        }
+        img{
+            width:330px;
+        }
+         a{
+            width: 305px;
+            margin:30px 10px;
+        }
+        h3{
+            width:320px;
+
+        }
     }
 </style>
 </html>
