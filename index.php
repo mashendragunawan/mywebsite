@@ -21,6 +21,9 @@
         </nav>
     </div>
     <div class="home">
+        <div class="jdcard">
+
+        </div>
     <?php
     include 'koneksi.php';
     $data= mysqli_query($con, "select * from tb_card ORDER by id DESC");
@@ -41,14 +44,6 @@
     </div>
 </body>
 <style>
-    .rr{
-        position:absolute;
-        
-    }
-    .aa{
-        position:absolute;
-        
-    }
     .utama{
         width:250px;
         height:300px; 
@@ -144,12 +139,18 @@
     }
     .lia a{
         width:100px;
-        display:none;
+        
     }
     h3{
         margin:10px 10px;
         font-family: sans-serif;
         width:108%;
+    }
+    .home{
+        width:1700px;
+        position:absolute;
+        top:900px;
+        left:150px;
     }
     @media only screen and (max-width:600px){
         .lia{

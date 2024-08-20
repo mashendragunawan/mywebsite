@@ -1,3 +1,3 @@
 <?php
-$con = mysqli_connect("localhost","newuser","386412","card");
+$con = mysqli_connect("localhost","root","","card");
 ?>
