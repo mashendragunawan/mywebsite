@@ -9,7 +9,7 @@
     <div class="nv">
         <nav>
             <ul>
-                <h2  class="Robet" >Mas Hendra</h2>
+                <h2>Mas Hendra</h2>
                 <div class="lia">
                 <li><a class="active" href="">Home</a></li>
                 <li><a class="aa" href="">Tutorial</a></li>
