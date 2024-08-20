@@ -22,7 +22,7 @@
     </div>
     <div class="home dd">
         <div class="jdcard">
-
+            <h4>Terbaru Di MasHendra</h4>
         </div>
     <?php
     include 'koneksi.php';
@@ -176,6 +176,11 @@
         left:150px;
         top:600px;
     }
+    .jdcard{
+        background-color:red;
+        width:200px;
+        height:150px;
+    }
     @media only screen and (max-width:600px){
         .lia{
             display:none;
@@ -201,12 +206,17 @@
             width:300px;
         }
          .ac{
-            width: 230px;
+            width: 276px;
             margin:30px 10px;
         }
         h3{
             width:230px;
-
+        }
+        .jdcard {
+        display: none;
+      }
+      .container:hover{
+            transform: none;
         }
     }
     @media only screen and (max-width:400px){
@@ -236,7 +246,7 @@
             width:330px;
         }
          .ac {
-            width: 305px;
+            width: 307px;
             margin:30px 10px;
         }
         h3{
