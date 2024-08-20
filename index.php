@@ -23,6 +23,7 @@
     <div class="home dd">
         <div class="jdcard">
             <h4>Terbaru Di MasHendra</h4>
+            <p>Baca update Artikel dan tutorial terbaru setiap harinya.</p>
         </div>
     <?php
     include 'koneksi.php';
@@ -176,10 +177,22 @@
         left:150px;
         top:600px;
     }
-    .jdcard{
-        background-color:red;
-        width:200px;
-        height:150px;
+    .jdcard h4{
+        font-size:30px;
+        font-weight:bold;
+        font-family:sans-serif; 
+        position:absolute;
+        left:655px;
+        top:-175px;
+    }
+    .jdcard p{
+        position:absolute;
+        top:-100px;
+        font-family:sans-serif; 
+        font-weight:bold;
+        left:600px;
+        color:#bdc3c7;
+
     }
     @media only screen and (max-width:600px){
         .lia{
