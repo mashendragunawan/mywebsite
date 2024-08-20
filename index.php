@@ -20,7 +20,7 @@
             </ul>
         </nav>
     </div>
-    <div class="home">
+    <div class="home dd">
         <div class="jdcard">
 
         </div>
@@ -173,8 +173,8 @@
     .home{
         width:1700px;
         position:absolute;
-        top:900px;
         left:150px;
+        top:600px;
     }
     @media only screen and (max-width:600px){
         .lia{
@@ -187,16 +187,20 @@
             margin-left:-350px;
         }
         .home{
-            background-color:blue;
+            position:absolute;
+            left:90px;
+            width:350px;
+            top:80px;
+            
         }
         .container{
-            width:250px;
+            width:300px;
             margin:10px 20px;
         }
         img{
-            width:250px;
+            width:300px;
         }
-         a{
+         .ac{
             width: 230px;
             margin:30px 10px;
         }
@@ -216,7 +220,10 @@
             margin-left:-380px;
         }
         .home{
-            background-color:blue;
+            position:absolute;
+            left:10px;
+            width:370px;
+            top:80px;
         }
         .container{
             width:330px;
@@ -228,7 +235,7 @@
         img{
             width:330px;
         }
-         a{
+         .ac {
             width: 305px;
             margin:30px 10px;
         }
