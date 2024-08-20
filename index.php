@@ -56,7 +56,8 @@
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
         border-radius:5px 5px 5px 5px;
         display:inline-flex;
-        transition: transform 0.3s ease;    
+        transition: transform 0.3s ease; 
+          
     }
     .container:hover{
         transform: scale(1.1);
@@ -72,7 +73,7 @@
         font-family: sans-serif;
     }
     .tag{
-        background-color: rgba(9, 132, 227, 0.5);
+        background-color: #2980b9;
         width: 60px;
         height:28px;
         display:flex;
@@ -80,6 +81,7 @@
         align-items:center;
         font-size:15px; 
         font-weight: bold;  
+        color:#fff;
     }
     ul{
         background-color:#fff;
@@ -181,6 +183,7 @@
         width:200px;
         height:150px;
     }
+    .tanggal
     @media only screen and (max-width:600px){
         .lia{
             display:none;
