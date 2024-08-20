@@ -22,9 +22,12 @@
 </body>
 <style>
     .container{
-        width:150px;
+        width:350px;
         height:250px;
         background-color:red;
+        position:absolute;
+        left:600px;
+        top:400px;
     }
     .inp{
         width:100%;
