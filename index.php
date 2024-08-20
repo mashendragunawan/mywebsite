@@ -11,11 +11,11 @@
             <ul>
                 <h2>Mas Hendra</h2>
                 <div class="lia">
-                <li><a href="">Home</a></li>
-                <li><a href="">Tutorial</a></li>
-                <li><a href="">Aplikasi</a></li>
-                <li><a href="">Artikel</a></li>
-                <li><a href="">About</a></li>
+                <li><a class="active" href="">Home</a></li>
+                <li><a class="aa" href="">Tutorial</a></li>
+                <li><a class="aa" href="">Aplikasi</a></li>
+                <li><a class="aa" href="">Artikel</a></li>
+                <li><a class="aa" href="">About</a></li>
                 </div>
             </ul>
         </nav>
@@ -102,14 +102,38 @@
         font-weight:bold;
         font-family:sans-serif;
     }
-    li{
-        margin:10px 15px;
-        
-    }
-    .lia a{
+    .aa{
+        color:#00b894;
         text-decoration: none;
+    }
+    .aa:hover{
+        background-color:#00b894;
+        width:100px;
+        height:38px; 
+        font-size:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+        border-radius:2px;
         color:#fff;
-        font-size:18px;
+        text-decoration: none; 
+    }
+    .active{
+        background-color:#00b894;
+        width:270px;
+        height:38px; 
+        font-size:20px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-weight:bold;
+        border-radius:2px;
+        color:#fff;
+        text-decoration: none;
+    }
+    li{
+        margin:10px 15px;   
     }
     body{
         margin:auto;
@@ -123,7 +147,7 @@
         font-weight:bold;
         font-size:35px;
     }
-     a{
+     .ac{
         text-decoration: none;
         margin:50px 10px;
         background-color:#16a085;
