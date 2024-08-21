@@ -34,7 +34,7 @@
         <div class="utama">
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
         <p class="tag"><?php echo $d['tag']; ?></p>
-        <h3><?php echo $d['judul']; ?></h3>
+        <h3 ><?php echo $d['judul']; ?></h3>
         <p class="tanggal"><?php echo $d['tangal']; ?></p>
         <?php echo "<a href='".$d['btn']."' class='ac'>Read More</a>";?>
         </div>
@@ -58,7 +58,6 @@
         border-radius:5px 5px 5px 5px;
         display:inline-flex;
         transition: transform 0.3s ease; 
-          
     }
     .container:hover{
         transform: scale(1.1);
@@ -152,7 +151,8 @@
     }
      .ac{
         text-decoration: none;
-        margin:50px 10px;
+        margin-left:9px;
+        margin-top:60px;
         background-color:#16a085;
         color:#fff; 
         width:270px;
@@ -171,7 +171,8 @@
     h3{
         margin:10px 10px;
         font-family: sans-serif;
-        width:108%;
+        background-color:red;
+        width:260px;
     }
     .home{
         width:1700px;
@@ -196,7 +197,16 @@
         color:#bdc3c7;
 
     }
-    .tanggal
+    .tanggal{
+        background-color:red;
+        width:100px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:15px; 
+        font-weight: bold;
+        height:30px;
+    }
     @media only screen and (max-width:600px){
         .lia{
             display:none;
