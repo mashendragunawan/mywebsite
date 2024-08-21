@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Card</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <div class="nv">
@@ -42,6 +43,17 @@
     <?php
     }
     ?>
+    </div>
+    <div class="footer">
+        <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/330247112/original/6081b95b9b09114315ba1403de12e1e7956f9149/code-websites-using-html-css-and-javascript.png" alt="">
+    </div>
+    <div class="footer1">
+        <div class="med">
+        <a href="">About</a>
+        <a href="">Contack US</a>
+        <a href="">Privacy </a><br>
+        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>  
+        </div>          
     </div>
 </body>
 <style>
@@ -152,7 +164,7 @@
      .ac{
         text-decoration: none;
         margin-left:9px;
-        margin-top:60px;
+        margin-top:20px;
         background-color:#16a085;
         color:#fff; 
         width:270px;
@@ -171,14 +183,13 @@
     h3{
         margin:10px 10px;
         font-family: sans-serif;
-        background-color:red;
-        width:260px;
+        width:272px;
     }
     .home{
         width:1700px;
         position:absolute;
         left:150px;
-        top:600px;
+        top:800px;
     }
     .jdcard h4{
         font-size:30px;
@@ -186,11 +197,11 @@
         font-family:sans-serif; 
         position:absolute;
         left:655px;
-        top:-175px;
+        top:-135px;
     }
     .jdcard p{
         position:absolute;
-        top:-100px;
+        top:-60px;
         font-family:sans-serif; 
         font-weight:bold;
         left:600px;
@@ -198,18 +209,38 @@
 
     }
     .tanggal{
-        background-color:red;
+        background-color:#7ed6df;
         width:100px;
         display:flex;
         justify-content:center;
         align-items:center;
         font-size:15px; 
         font-weight: bold;
+        color:#fff;
         height:30px;
+    }
+    .footer{
+        width:auto;
+        background-color:black;
+        height:630px;
+    }
+    .footer img{
+        width: 100%;
+        height: 630px;
+        object-fit: cover;
+    }
+    .footer1{
+        width:auto;
+        height:200px;
+        background-color:#34495e;
+        margin-top:1100px;
     }
     @media only screen and (max-width:600px){
         .lia{
             display:none;
+        }
+        .footer{
+            display:none;Z
         }
         ul{
             max-width:content;
@@ -248,6 +279,9 @@
     @media only screen and (max-width:400px){
         .lia{
             display:none;
+        }
+        .footer{
+            display:none;Z
         }
         ul{
             max-width:content;
