@@ -36,7 +36,7 @@
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
         <p class="tag"><?php echo $d['tag']; ?></p>
         <h3 ><?php echo $d['judul']; ?></h3>
-        <p class="tanggal"><?php echo $d['tangal']; ?></p>
+        <p class="tanggal"><?php echo $d['tanggal']; ?></p>
         <?php echo "<a href='".$d['btn']."' class='ac'>Read More</a>";?>
         </div>
     </div>
@@ -54,8 +54,7 @@
         <a href="">Privacy </a><br>
         <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>  
         </div>          
-    </div>
-    <h1>test</h1>
+</div>
 </body>
 <style>
 
@@ -317,11 +316,10 @@
 
         }
     }
-    @media only screen and (max-width:1369px){
+    @media only screen and (min-width:786px){
     .home{
-        background-color:red;
-        width:900px;
-        margin-left:-100px;
+        width:1200px;
+        margin-left:-50px;
     }
     .footer{
         width:auto;
@@ -330,48 +328,69 @@
     }
     .lia{
         width:200px;
-        margin-left:-100px;
+        margin-left:30px;
     }
     h2{
         margin-left:-230px;
     }
     .container{
-        width:150px;
-        height:250px;
+        width:200px;
+        height:320px;
     }
     img{
-        width:150px;
-        height:100px;
+        width:200px;
+        height:150px;
     }
     .tag{
-        width:30px;
-        height:15px;
-        font-size:8px;
+        width:50px;
+        height:25px;
+        font-size:12px;
         margin-top:-2px;
         margin-left:5px;
     }
     h3{
-        font-size:12px;
-        width:140px;
+        font-size:13px;
+        width:190px;
         margin-left:4px;
         position:relative;
-        background-color:red;
         white-space: pre-line;
         height:50px;
-        line-height: 1.5;
+        line-height: 1.8;
     }
     .tanggal{
-        width:50px;
-        height:20px;
-        font-size:8px;
+        width:60px;
+        height:25px;
+        font-size:10px;
         position:relative;
-        top:50px;
+        color:black;
+        top: 10px;
+        left:-5px;
     }
     .ac{
-        width:100px;
+        width:180px;
         font-size:12px;
         height:25px;
         position:relative;
+        top:-2px;
+        left:-2px;
     }
+    .jdcard h4{
+        font-size:30px;
+        font-weight:bold;
+        font-family:sans-serif; 
+        position:absolute;
+        left:490px;
+        top:-135px;
+    }
+    .jdcard p{
+        position:absolute;
+        top:-60px;
+        font-family:sans-serif; 
+        font-weight:bold;
+        left:440px;
+        color:#8395a7;
+    }
+}
+
 </style>
 </html>

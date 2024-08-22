@@ -1,11 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Text Editor Sederhana</title>
+  <style>
+    textarea {
+      width: 500px;
+      height: 300px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Sukses</h1>
+  <textarea id="myEditor"></textarea>
+  <button onclick="saveFile()">Simpan</button>
+  <button onclick="loadFile()">Muat</button>
+
+  <script>
+    function saveFile() {
+      // Kode untuk menyimpan teks ke file
+      const text = document.getElementById('myEditor').value;
+      const blob = new Blob([text], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.download = 'myFile.txt';
+      a.href = URL.createObjectURL(blob);
+      a.click();
+    }
+
+    function loadFile() {
+      // Kode untuk memuat file teks
+      // ... (implementasi menggunakan FileReader atau HTML5 File API)
+    }
+  </script>
 </body>
 </html>
