@@ -57,6 +57,7 @@
     </div>
 </body>
 <style>
+
     .utama{
         width:250px;
         height:300px; 
@@ -152,6 +153,7 @@
     body{
         margin:auto;
         padding:auto;
+        max-width:content;
     }
     h2{
         color:#16a085;
@@ -313,6 +315,62 @@
             width:320px;
 
         }
+    }
+    @media only screen and (max-width:1369px){
+    .home{
+        background-color:red;
+        width:900px;
+        margin-left:-100px;
+    }
+    .footer{
+        width:auto;
+        background-color:black;
+        height:630px;
+    }
+    .lia{
+        width:200px;
+        margin-left:-100px;
+    }
+    h2{
+        margin-left:-230px;
+    }
+    .container{
+        width:150px;
+        height:250px;
+    }
+    img{
+        width:150px;
+        height:100px;
+    }
+    .tag{
+        width:30px;
+        height:15px;
+        font-size:8px;
+        margin-top:-2px;
+        margin-left:5px;
+    }
+    h3{
+        font-size:12px;
+        width:140px;
+        margin-left:4px;
+        position:relative;
+        background-color:red;
+        white-space: pre-line;
+        height:50px;
+        line-height: 1.5;
+    }
+    .tanggal{
+        width:50px;
+        height:20px;
+        font-size:8px;
+        position:relative;
+        top:50px;
+    }
+    .ac{
+        width:100px;
+        font-size:12px;
+        height:25px;
+        position:relative;
     }
 </style>
 </html>
