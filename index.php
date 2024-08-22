@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Card</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="nv">
@@ -52,8 +52,17 @@
         <a href="">About</a>
         <a href="">Contack US</a>
         <a href="">Privacy </a><br>
-        <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>  
-        </div>          
+        </div>   
+        <div class="ico">
+        <i class="fa fa-github" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        </div>  
+        <div class="cop">
+        <p>Copyright © 2024 www.mashendra.com</p
+        </div>
 </div>
 </body>
 <style>
@@ -277,6 +286,9 @@
       .container:hover{
             transform: none;
         }
+        .footer1{
+            display:none;
+        }
     }
     @media only screen and (max-width:400px){
         .lia{
@@ -314,6 +326,9 @@
         h3{
             width:320px;
 
+        }
+        .med{
+            display:none;
         }
     }
     @media only screen and (min-width:786px){
@@ -389,6 +404,42 @@
         font-weight:bold;
         left:440px;
         color:#8395a7;
+    }
+    .med{
+       
+        width:300px;
+        position:relative;
+        top:30px;
+        left:520px;
+    }
+    .med a{
+        font-size:18px;
+        padding:0px 15px;
+        color:#fff;
+        text-decoration: none;
+        
+    }
+    .med a:hover{
+        text-decoration: underline;
+        transition: text-decoration-thickness 0.2s ease-in-out;
+    }
+    .ico i{
+        font-size:25px;
+        padding:0px 10px;
+        color:#fff;
+    }
+    .ico{
+        position:relative;
+        width:260px;
+        top:80px;
+        left:540px;
+    }
+    .cop p{
+        color:#fff;
+        position:relative;
+        top:110px;
+        left:510px;
+        width:400px;
     }
 }
 
