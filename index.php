@@ -441,6 +441,10 @@
         left:510px;
         width:400px;
     }
+    .cop a{
+        color:blue;
+        width:12px;
+    }
 }
 
 </style>
