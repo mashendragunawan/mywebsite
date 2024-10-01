@@ -35,7 +35,7 @@
         <div class="utama">
         <?php echo"<img src='".$d['gambar']."' alt=''>";?>
         <p class="tag"><?php echo $d['tag']; ?></p>
-        <h3 ><?php echo $d['judul']; ?></h3>
+        <h3 ><?php echo $d['Judul']; ?></h3>
         <p class="tanggal"><?php echo $d['tanggal']; ?></p>
         <?php echo "<a href='".$d['btn']."' class='ac'>Read More</a>";?>
         </div>
@@ -441,10 +441,7 @@
         left:510px;
         width:400px;
     }
-    .cop a{
-        color:blue;
-        width:12px;
-    }
+    
 }
 
 </style>
