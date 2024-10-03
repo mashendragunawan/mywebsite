@@ -349,11 +349,11 @@
         margin-left:-230px;
     }
     .container{
-        width:200px;
+        width:250px;
         height:320px;
     }
     img{
-        width:200px;
+        width:250px;
         height:150px;
     }
     .tag{
